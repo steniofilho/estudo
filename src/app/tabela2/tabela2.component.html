@@ -1,0 +1,5 @@
+<mat-list>
+    <mat-list-item *ngFor="let c of clients; let i=index">
+      {{c.nome}} - {{c.idade}} <button mat-icon-button (click)="delete(i)"><mat-icon>delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
